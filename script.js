@@ -1,3 +1,63 @@
+let data = [
+
+{title:"Indian Navy Recruitment 2026", type:"jobs", link:"indian-navy-recruitment.html"},
+{title:"Railway Group D Result", type:"result", link:"#"},
+{title:"SSC GD Admit Card", type:"admit", link:"#"},
+{title:"UP Police Answer Key", type:"answer", link:"#"},
+{title:"PM Awas Yojana", type:"yojana", link:"#"},
+{title:"Scholarship 2026", type:"scholarship", link:"#"},
+{title:"Upcoming SSC Jobs", type:"upcoming", link:"#"}
+
+];
+
+function showData(list){
+
+let output=""
+
+list.forEach(item=>{
+
+output += `
+<div class="card">
+<h3>${item.title}</h3>
+<a href="${item.link}">
+<button>View</button>
+</a>
+</div>
+`
+
+})
+
+document.getElementById("data").innerHTML=output
+
+}
+
+showData(data)
+
+function searchData(){
+
+let input=document.getElementById("search").value.toLowerCase()
+
+let filtered = data.filter(item =>
+item.title.toLowerCase().includes(input)
+)
+
+showData(filtered)
+
+}
+
+function filter(type){
+
+if(type=="all"){
+showData(data)
+}
+else{
+
+let filtered = data.filter(item => item.type==type)
+showData(filtered)
+
+}
+
+}
 alert("Welcome tfunction searchJobs(){
 
 let input=document.getElementById("search").value.toLowerCase()
