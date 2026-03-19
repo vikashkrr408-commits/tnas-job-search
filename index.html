@@ -12,7 +12,6 @@
 <nav>
 <a href="index.html">Home</a>
 <a href="jobs.html">Jobs</a>
-<a href="post-job.html">Post Job</a>
 <a href="login.html">Login</a>
 </nav>
 </header>
@@ -41,15 +40,33 @@
 
 </body>
 </html>
-<head>
+<h2>Latest Jobs</h2>
 
-<meta name="google-site-verification" content="ABC123XYZ" />
+<div id="jobList"></div>
 
-<title>TNas Job Search</title>
+<script>
 
-</head><meta name="google-site-verification" content="UoHP9pJfJwepicgsgMpUIWWRdvrJPzMvjg7DwyK0kWg" />
-<title>TNas Job Search - Latest Government Jobs</title>
+let jobs=JSON.parse(localStorage.getItem("jobs")) || []
 
-<meta name="description" content="TNas Job Search website par latest government jobs, railway jobs, army jobs aur private jobs ki jankari milegi.">
+let list=document.getElementById("jobList")
 
-<meta name="keywords" content="government jobs, railway jobs, army jobs, latest jobs India">
+jobs.forEach(function(job){
+
+let div=document.createElement("div")
+
+div.innerHTML="<h3>"+job.title+"</h3><p>"+job.company+"</p>"
+
+list.appendChild(div)
+
+})
+
+</script>
+<div class="job">
+
+<h3>Indian Navy Recruitment 2026</h3>
+
+<a href="indian-navy-recruitment.html">
+<button>View Full Details</button>
+</a>
+
+
