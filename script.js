@@ -1,5 +1,27 @@
 let data = [
 
+{title:"Indian Navy Recruitment 2026", type:"jobs"},
+{title:"Bihar Board 10th Result 2026", type:"results"},
+{title:"SSC GD Admit Card", type:"admit"},
+{title:"UP Police Answer Key", type:"answer"},
+{title:"SSC Syllabus PDF", type:"syllabus"},
+{title:"College Admission 2026", type:"admission"},
+{title:"Scholarship 2026", type:"scholarship"},
+{title:"PM Awas Yojana", type:"yojana"},
+{title:"Upcoming Railway Jobs", type:"upcoming"}
+
+];
+
+data.forEach(item=>{
+
+let div=document.createElement("p")
+div.innerHTML = "➤ " + item.title
+
+document.getElementById(item.type).appendChild(div)
+
+});
+let data = [
+
 {title:"Indian Navy Recruitment 2026", type:"jobs", link:"indian-navy-recruitment.html"},
 {title:"Railway Group D Result", type:"result", link:"#"},
 {title:"SSC GD Admit Card", type:"admit", link:"#"},
