@@ -1,3 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>TNas Job Search - Latest Jobs</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>TNas Job Search</h1>
+
+<input type="text" id="search" placeholder="Search here..." onkeyup="searchData()">
+
+<div class="menu">
+<button onclick="filter('all')">All</button>
+<button onclick="filter('jobs')">Latest Jobs</button>
+<button onclick="filter('result')">Results</button>
+<button onclick="filter('admit')">Admit Card</button>
+<button onclick="filter('answer')">Answer Key</button>
+<button onclick="filter('yojana')">Yojana</button>
+<button onclick="filter('scholarship')">Scholarship</button>
+<button onclick="filter('upcoming')">Upcoming</button>
+</div>
+
+<div id="data"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
 </script>
 <!DOCTYPE html>
 <html>
