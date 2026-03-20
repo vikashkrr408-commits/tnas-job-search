@@ -1,3 +1,47 @@
+let data = [
+
+{title:"Indian Navy Recruitment 2026", type:"jobs", link:"indian-navy-recruitment.html"},
+
+{title:"Bihar Board 10th Result 2026", type:"results", link:"#"},  
+
+{title:"DCECE Bihar Polytechnic Form 2026", type:"admission", link:"dcece-bihar-polytechnic-2026.html"}
+
+];
+
+function showData(list){
+
+let output=""
+
+list.forEach(item=>{
+
+output += `
+<div class="card">
+<h3>${item.title}</h3>
+<a href="${item.link}">
+<button>View</button>
+</a>
+</div>
+`
+
+})
+
+document.getElementById("data").innerHTML=output
+
+}
+
+showData(data)
+
+function searchData(){
+
+let input=document.getElementById("search").value.toLowerCase()
+
+let filtered = data.filter(item =>
+item.title.toLowerCase().includes(input)
+)
+
+showData(filtered)
+
+}
 <!DOCTYPE html>
 <html>
 <head>
