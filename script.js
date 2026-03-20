@@ -1,5 +1,4 @@
 {title:"DCECE Bihar Polytechnic Form 2026", type:"admission", link:"dcece-bihar-polytechnic-2026.html"}
-let data = [
 
 {title:"Indian Navy Recruitment 2026", type:"jobs"},
 {title:"Bihar Board 10th Result 2026", type:"results"},
