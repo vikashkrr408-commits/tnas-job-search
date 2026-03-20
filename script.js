@@ -1,3 +1,5 @@
+{title:"NVS Class 6 Summer Bound Result 2026", type:"results", link:"nvs-class-6-result-2026.html"}
+
 let data = [
 
 {title:"Indian Navy Recruitment 2026", type:"jobs", link:"indian-navy-recruitment.html"},
