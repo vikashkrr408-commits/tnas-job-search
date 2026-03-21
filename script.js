@@ -1,3 +1,20 @@
+<script>
+function searchResult() {
+    let input = document.getElementById("searchBox").value.toLowerCase();
+    let items = document.getElementsByClassName("result-item");
+
+    for (let i = 0; i < items.length; i++) {
+        let text = items[i].innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            items[i].style.display = "block";   // show matching
+        } else {
+            items[i].style.display = "none";    // hide non-matching
+        }
+    }
+}
+</script>
+
 {title:"NVS Class 6 Summer Bound Result 2026", type:"results", link:"nvs-class-6-result-2026.html"}
 
 let data = [
