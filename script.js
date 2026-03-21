@@ -1,3 +1,21 @@
+function searchResult() {
+    let input = document.getElementById("searchBox").value.toLowerCase();
+    let items = document.getElementsByClassName("result-item");
+    let found = false;
+
+    for (let i = 0; i < items.length; i++) {
+        let text = items[i].innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            items[i].style.display = "block";
+            found = true;
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+
+    document.getElementById("noResult").style.display = found ? "none" : "block";
+}
 <script>
 function searchResult() {
     let input = document.getElementById("searchBox").value.toLowerCase();
