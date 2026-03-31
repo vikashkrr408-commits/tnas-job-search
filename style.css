@@ -1,3 +1,21 @@
+/* Tables ko mobile responsive banane ke liye */
+.job-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.job-table th, .job-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+.job-table th {
+    background-color: #ffc107;
+    color: #000;
+}
+@media screen and (max-width: 600px) {
+    .job-table { display: block; overflow-x: auto; }
+}
 body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; }
 header { background: #004085; color: white; padding: 1rem; text-align: center; }
 nav ul { list-style: none; padding: 0; }
